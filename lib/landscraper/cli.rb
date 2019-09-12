@@ -23,20 +23,22 @@ module Landscraper
        end
 
        def list_properties
-
+          #show listings
         puts  <<-DOC
         1.Press select for featured properties of the day
         2.press number to see details of each property
         
          DOC
-       
+        # self.all
+         #binding.pry
     end
+    
 
     def collection
               collection=property.new.address.each.with_index(1) do |index,property|
                address = property.css(".address").text.strip
                puts "#{index}. #{property}"
-               binding.pry
+          binding.pry      
             end
     end
 
@@ -71,7 +73,10 @@ module Landscraper
             puts "More info on property 9.."
         when "10"
             puts "More info on property 10.."
-       
+        else
+            puts "\n Input error,please try your selection again"   
+            
+
            end
        end
     end
