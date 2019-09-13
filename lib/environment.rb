@@ -7,5 +7,5 @@ require "pry"
 
 module Landscraper
   class Error < StandardError; end
-  # Your code goes here...
+  # Your code goes here...S
 end

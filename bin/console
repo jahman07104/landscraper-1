@@ -3,10 +3,13 @@
 require_relative "../lib/environment"
 
 
-#Landscraper::CLI.new.start
-#Landscraper::CLI.collection
+
+Landscraper::CLI.new.start
+#Landscraper::CLI.create
+#Landscraper::CLI.new.list_properties
+#Landscraper::CLI.new.collection
 #Landscraper::Scraper.scrape
 #Landscraper::Property.create
-Landscraper::Property.all
+#Landscraper::Property.all
 
 
