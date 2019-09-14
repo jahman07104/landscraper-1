@@ -5,43 +5,40 @@ require 'pry'
 
 module Landscraper 
   class CLI
-    #   #attr_accessor :property_hash
-        
-    
-    # def initialize 
-    #   @test= Property.new
-    #   #@test.Property.create
-    #   Landscraper::Property.all
-    #   Property.create 
-    #   #**to do save list of property objects to @@all
-    #   #** to do use @@all in this class
-    # end
-
     def call
       puts     "Welcome To Landscraper"
-      #**list_properties=Property.create shows list of properties
-      puts "here are Today's Properties"
-      #see notes
-      puts  "At anytime type select for featured properties of the day"
-      puts "enter the number of your selection  or type exit to leave listing"
+      list_addresses#
+      puts  "Type list to display todays Properties Prices and Descriptions"
+      puts   "Type 1 to see just addresses"
+      puts   "Type 2 to see price range and description" 
+      puts   "Type exit to leave listing"
+
       input = nil
 
       #binding.pry
       while input != "exit"
-        puts "enter the number of your selection  to see location, price and description or type exit to leave listing"
+        #puts "Type select enter"
         input = gets.strip.downcase
         case input
         when"select"
             puts "todays properties.."
             list_properties
-            
+            puts "Type 4 to return to main menu"
         when"1"
             puts "to see location.."
-            @property.address
+            list_addresses
+            puts "Type 4 to return to main menu"
         when "2"
-            puts "to see price.."
-        when "3"
-            puts "to see description.."
+            puts "to see price range and description .."
+            list_price_description
+            puts "Type 4 to return to main menu"
+        when "4"
+          puts     "Welcome To Landscraper"
+          list_addresses#
+          puts  "Type list to display todays Properties Prices and Descriptions"
+          puts   "Type 1 to see just addresses"
+          puts   "Type 2 to see price range and description" 
+          puts   "Type exit to leave listing"
            
         when "list"
              list_properties
@@ -61,12 +58,29 @@ module Landscraper
       puts "Call 1-800-555-5555 to speak to our Agents" 
     end
     def list_properties
-      puts "Here are todays special properties"
+      puts " Todays special properties"
+      @properties = Landscraper::Property.all
+      @properties.each.with_index(1) do |property, i|
+        puts " #{i}.#{property.address}"
+        puts " #{i}.#{property.price}"
+        puts " #{i}.#{property.description}"
+      end
+    end
+    def list_addresses
+      puts "Here are todays special properties..!!!"
       @properties = Landscraper::Property.all
       @properties.each.with_index(1) do |property, i|
 
         #binding.pry 
         puts " #{i}.#{property.address}"
+      end
+    end
+    def list_price_description
+      puts "Here are todays special properties"
+      @properties = Landscraper::Property.all
+      @properties.each.with_index(1) do |property, i|
+
+        #binding.pry 
         puts " #{i}.#{property.price}"
         puts " #{i}.#{property.description}"
       end

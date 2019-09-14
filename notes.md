@@ -157,3 +157,15 @@ suggestion to lessen code from Beth
           #end
         end
 **************************
+
+  #   #attr_accessor :property_hash
+        
+    
+    # def initialize 
+    #   @test= Property.new
+    #   #@test.Property.create
+    #   Landscraper::Property.all
+    #   Property.create 
+    #   #**to do save list of property objects to @@all
+    #   #** to do use @@all in this class
+    # end
