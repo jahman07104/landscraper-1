@@ -109,3 +109,51 @@ cli class
     end
   end
 end
+*********************************************
+friday night 10:18
+
+what must my property App have
+
+1.must have an address 
+2.must have a price 
+3.must have a description
+(must have an url..??)
+
+suggestion to lessen code from Beth
+  # def  
+       chosen_property= Property.all[input.to_i - 1]
+       show_property(chosen_property)
+       end
+##line 24..***
+#menu_list
+        #property_hash #shows entire list with address price and description
+        #collection.address shows address
+        #**collection.price   shows price
+        #**collection.description shows description
+        #goodbye 
+        #end
+        #@property_hash = Property.all
+      #binding.pry
+      *************************************
+
+      ##;line 59****
+
+        def self.create
+          Scraper.scrape.collect do |property_hash| 
+          property_hash = self.new(property_hash)
+          [] << property_hash 
+          property_hash.map {|x| x.values[0]}
+          property_hash.map {|x| x.keys}.uniq
+          binding.pry
+        end
+    binding.pry
+        end  
+        *******************
+
+        line 58
+           def collection
+            collection= Property.all.each.with_index(1) do |property,index|
+            puts "#{index}. #{property}"      
+          #end
+        end
+**************************
