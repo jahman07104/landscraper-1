@@ -169,3 +169,9 @@ suggestion to lessen code from Beth
     #   #**to do save list of property objects to @@all
     #   #** to do use @@all in this class
     # end
+    #Landscraper::CLI.list_properties
+#Landscraper::CLI.new.menu_list
+#Landscraper::CLI.collection
+#Landscraper::Scraper.scrape
+#Landscraper::Property.create
+#Landscraper::Property.all

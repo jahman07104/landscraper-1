@@ -8,8 +8,6 @@ module Landscraper
 
     def self.all
       @@all ||= self.create
-       #puts "i see you"
-       #binding.pry
     end
 
     def self.create

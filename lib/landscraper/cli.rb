@@ -11,11 +11,8 @@ module Landscraper
       puts  "Type list to display todays Properties Prices and Descriptions"
       puts   "Type 1 to see just addresses"
       puts   "Type 2 to see price range and description" 
-      puts   "Type exit to leave listing"
-
+      puts   "Type exit to leave the listing"
       input = nil
-
-      #binding.pry
       while input != "exit"
         #puts "Type select enter"
         input = gets.strip.downcase
@@ -23,25 +20,25 @@ module Landscraper
         when"select"
             puts "todays properties.."
             list_properties
-            puts "Type 4 to return to main menu"
+            puts "Type Menu to return to main Menu"
         when"1"
             puts "to see location.."
             list_addresses
-            puts "Type 4 to return to main menu"
+            puts "Type Menu to return to main Menu"
         when "2"
             puts "to see price range and description .."
             list_price_description
-            puts "Type 4 to return to main menu"
-        when "4"
+            puts "Type Menu to return to main Menu"
+        when "menu"
           puts     "Welcome To Landscraper"
           list_addresses#
           puts  "Type list to display todays Properties Prices and Descriptions"
           puts   "Type 1 to see just addresses"
           puts   "Type 2 to see price range and description" 
           puts   "Type exit to leave listing"
-           
         when "list"
              list_properties
+             puts "Type Menu to return to main Menu"
         when "exit"
             goodbye 
         else
@@ -53,10 +50,11 @@ module Landscraper
 
     def goodbye
       puts "Good Bye "
-      puts"visit us again soon" 
+      puts "visit us again soon" 
       puts      "or"
       puts "Call 1-800-555-5555 to speak to our Agents" 
     end
+
     def list_properties
       puts " Todays special properties"
       @properties = Landscraper::Property.all
@@ -66,21 +64,19 @@ module Landscraper
         puts " #{i}.#{property.description}"
       end
     end
+
     def list_addresses
       puts "Here are todays special properties..!!!"
       @properties = Landscraper::Property.all
       @properties.each.with_index(1) do |property, i|
-
-        #binding.pry 
         puts " #{i}.#{property.address}"
       end
     end
+
     def list_price_description
       puts "Here are todays special properties"
       @properties = Landscraper::Property.all
-      @properties.each.with_index(1) do |property, i|
-
-        #binding.pry 
+      @properties.each.with_index(1) do |property, i| 
         puts " #{i}.#{property.price}"
         puts " #{i}.#{property.description}"
       end
