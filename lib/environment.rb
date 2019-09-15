@@ -4,6 +4,7 @@ require_relative "landscraper/property"
 require_relative "landscraper/scraper"
 require "nokogiri"
 require "pry"
+require "colorize"
 
 module Landscraper
   class Error < StandardError; end
