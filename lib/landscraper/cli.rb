@@ -36,10 +36,10 @@ module Landscraper
         when "menu"
           puts     "Welcome To Landscraper".colorize(:red)
           list_addresses#
-          puts  "Type list to display todays Properties Prices and Descriptions"
-          puts   "Type 1 to see just addresses"
-          puts   "Type 2 to see price range and description"
-          puts   "Type exit to leave listing"
+          puts  "Type list to display todays Properties Prices and Descriptions".colorize(:yellow)
+          puts   "Type 1 to see just addresses".colorize(:yellow)
+          puts   "Type 2 to see price range and description".colorize(:yellow)
+          puts   "Type exit to leave listing".colorize(:red)
         when "list"
              list_properties
              puts "Type Menu to return to main Menu".colorize(:green)
