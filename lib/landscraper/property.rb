@@ -8,6 +8,7 @@ module Landscraper
 
     def self.all
       @@all ||= self.create
+      
     end
 
     def self.create
