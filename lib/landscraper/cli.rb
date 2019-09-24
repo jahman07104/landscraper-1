@@ -38,8 +38,8 @@ module Landscraper
       puts "Type list to display todays Properties Prices and Descriptions".colorize(:yellow)
       puts "Type address to see just addresses".colorize(:yellow)
       puts "Type Prices to see price range and description".colorize(:yellow)
-      puts "Type exit to leave listing".colorize(:red)
       puts  "Type Choice to see induvidual properties".colorize(:yellow)
+      puts "Type exit to leave listing".colorize(:red)
       when "choice"
       puts " enter number to see property".colorize(:yellow)
       puts =""
@@ -53,12 +53,14 @@ module Landscraper
       end
     end
     end
+
     def goodbye
       puts "Good Bye ".colorize(:red)
       puts "visit us again soon" .colorize(:red)
       puts "or".colorize(:green)
       puts "Call 1-800-555-5555 to speak to our Agents".colorize(:red)
     end
+
     def choice
       input = ""
       puts = ""
@@ -78,6 +80,7 @@ module Landscraper
       input = gets.chomp.to_i-1
       end
     end
+
     def list_properties
       puts " "
       puts " Todays special properties".colorize(:green)
@@ -89,6 +92,7 @@ module Landscraper
       puts "     #{property.description}"
       end
     end
+
     def list_addresses
       puts "Here are Todays special Properties..!!!".colorize(:green)
       puts " "
@@ -98,12 +102,13 @@ module Landscraper
       puts " "
       end
     end
+
     def list_price_description
       puts "Todays Properties and Prices".colorize(:red)
       @properties = Landscraper::Property.all
+      @properties.sort! {|y,x| y.price.gsub("USD $","").gsub(",", "").to_i <=> x.price.gsub("USD $","").gsub(",", "").to_i}
       @properties.each.with_index(1) do |property, i| 
-      puts " #{i}.#{property.price}"
-      puts " #{i}.#{property.description}"
+       puts " #{i}.#{property.price}"
       end
     end
   end

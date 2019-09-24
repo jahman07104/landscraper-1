@@ -1,7 +1,7 @@
 module Landscraper
   class Property
     attr_accessor :address, :price, :description 
-    
+  
     def initialize(attributes={})
       attributes.each {|key, value| self.send(("#{key}="), value)}
     end
@@ -18,6 +18,9 @@ module Landscraper
     end
   end
 end
+
+
+
 
 
 

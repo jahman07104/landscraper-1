@@ -1,0 +1,40 @@
+=> [[32m#<Landscraper::Property:0x00007fffe45487b0[0m
+  @address[32m=[0m[31m[1;31m"[0m[31mCARHAMPTON DRIVE, Montego Bay, St. James[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $1,468 per month[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Landscraper::Property:0x00007fffe4548648[0m
+  @address[32m=[0m[31m[1;31m"[0m[31mWATERLOO AVENUE, Kingston 10, St. Andrew[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $588 per month[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Landscraper::Property:0x00007fffe4548530[0m
+  @address[32m=[0m[31m[1;31m"[0m[31m22A LEAS FLATS 38, Red Hills, St. Andrew[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $1,370 per month[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Landscraper::Property:0x00007fffe4548378[0m
+  @address[32m=[0m[31m[1;31m"[0m[31m8 KINGSWAY AVENUE 30, Kingston 10, St. Andrew[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $1,175 per month[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Landscraper::Property:0x00007fffe4548210[0m
+  @address[32m=[0m[31m[1;31m"[0m[31mCHERRY HILL DRIVE 23b, Kingston 8, St. Andrew[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $2,251 per month[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Landscraper::Property:0x00007fffe4548008[0m
+  @address[32m=[0m[31m[1;31m"[0m[31m44 PARK AVENUE, HAVENDALE, Kingston 19, St. Andrew[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $588 per month[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Landscraper::Property:0x00007fffe458fdb8[0m
+  @address[32m=[0m[31m[1;31m"[0m[31mCAYMANAS ESTATE, Spanish Town, St. Catherine[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $882 per month[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Landscraper::Property:0x00007fffe458fc50[0m
+  @address[32m=[0m[31m[1;31m"[0m[31m6 WATERLOO AVENUE 25, Kingston 10, St. Andrew[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $734 per month[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Landscraper::Property:0x00007fffe458fa98[0m
+  @address[32m=[0m[31m[1;31m"[0m[31mIRONSHORE 18, Montego Bay, St. James[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $1,958 per month[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Landscraper::Property:0x00007fffe458f890[0m
+  @address[32m=[0m[31m[1;31m"[0m[31m11 CHARLTON ROAD 7, Kingston 8, St. Andrew[1;31m"[0m[31m[0m,
+  @description[32m=[0m[31m[1;31m"[0m[31mHouse[1;31m"[0m[31m[0m,
+  @price[32m=[0m[31m[1;31m"[0m[31mUSD $772 per month[1;31m"[0m[31m[0m[32m>[0m]

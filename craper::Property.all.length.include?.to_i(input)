@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/jahman07104/code/landscraper/lib/landscraper/cli.rb @ line 14 Landscraper::CLI#call:
+
+     [1;34m9[0m:       puts  [31m[1;31m"[0m[31mWelcome To Landscraper[1;31m"[0m[31m[0m.colorize([33m:green[0m)
+    [1;34m10[0m:       puts  [31m[1;31m"[0m[31m [1;31m"[0m[31m[0m
+    [1;34m11[0m:       list_addresses
+    [1;34m12[0m:       puts  [31m[1;31m"[0m[31m [1;31m"[0m[31m[0m
+    [1;34m13[0m:       puts  [31m[1;31m"[0m[31mType list to display todays Properties Prices and Descriptions[1;31m"[0m[31m[0m.colorize([33m:yellow[0m)
+ => [1;34m14[0m:     binding.pry [1;34m#**need selection[0m
+    [1;34m15[0m:       puts  [31m[1;31m"[0m[31m [1;31m"[0m[31m[0m
+    [1;34m16[0m:       puts  [31m[1;31m"[0m[31mType exit to leave the listing[1;31m"[0m[31m[0m.colorize([33m:red[0m)
+    [1;34m17[0m:       input = [1;36mnil[0m
+    [1;34m18[0m:       [32mwhile[0m input != [31m[1;31m"[0m[31mexit[1;31m"[0m[31m[0m
+    [1;34m19[0m:       input = gets.strip.downcase
+
